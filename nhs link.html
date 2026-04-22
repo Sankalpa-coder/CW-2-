@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="contactcss.css">
+<body>
+    <h1>NHS Website</h1>
+    <p>For more information on health and wellness, please visit the official NHS website:</p>
+    <a href="https://www.nhs.uk/" target="_blank">Visit NHS Website</a>
+<form id="NHSFORM">
+    <h2>Create Account</h2>
+
+    <label>Email</label>
+    <input type="email" id="signupEmail" required>
+
+   <br> <label> Your Nhs Password</label>
+    <input type="password" id="signupPassword" required>
+
+    <br>
+    <label>NHS Number</label>
+    <input type="text" id="NhsNumber" maxlength="10" required>
+
+    <button type="submit">Add number</button>
+        <br>
+        <br>
+    <button onclick="window.location.href='home1.html';" class="btn btn-secondary">Home</button>
+</form>
+</body>
+<script>
+    document.getElementById('NHSFORM').addEventListener('submit', function(event) {
+alert('NHS number added successfully!');
+    });
+</html>

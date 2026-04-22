@@ -1,0 +1,165 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f2f7ff;
+    margin: 0;
+    padding: 0;
+    color: #1a2a4f;
+}
+
+/* Utility Buttons */
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.btn-primary {
+    background: #1e5eff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #174bcc;
+}
+
+.btn-secondary {
+    background: #e1e9ff;
+    color: #1e5eff;
+}
+
+.btn-secondary:hover {
+    background: #c9d7ff;
+}
+
+/* ===== Filters Section ===== */
+.filters-section {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.filters-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #bcd0ff;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s;
+}
+
+.search-input:focus {
+    border-color: #1e5eff;
+    box-shadow: 0 0 4px rgba(30, 94, 255, 0.4);
+}
+
+/* Filter Options */
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.filter-group label {
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.filter-select {
+    padding: 8px 12px;
+    border: 1px solid #bcd0ff;
+    border-radius: 6px;
+    background: white;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.filter-select:focus {
+    border-color: #1e5eff;
+    box-shadow: 0 0 4px rgba(30, 94, 255, 0.4);
+}
+
+/* ===== Reports Grid ===== */
+.reports-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #1e5eff;
+}
+
+/* Report Cards (if you add them later) */
+.report-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dbe6ff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: 0.25s;
+}
+
+.report-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    padding: 30px;
+    color: #4a5d8a;
+}
+
+/* ===== Pagination ===== */
+.pagination-section {
+    margin: 20px 0 40px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 8px 14px;
+    margin: 0 4px;
+    border: 1px solid #bcd0ff;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.pagination button:hover {
+    background: #e8f0ff;
+}
+
+.pagination .active {
+    background: #1e5eff;
+    color: white;
+    border-color: #1e5eff;
+}

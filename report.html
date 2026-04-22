@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone - Reports</title>
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">   
+    <link rel="stylesheet" href="maincss.css">
+</head>
+<header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>fit<span>zone</span></h1>
+            </div>
+            
+           
+            <!-- Navigation Menu  -->
+            <ul class="nav-menu">
+                <li><a href="home1.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="privacy-policy.html" class="nav-link">Privacy</a></li>
+            </ul>
+           
+
+            </div> 
+             
+        </nav>
+    </header>
+<body>
+
+         <div class="back-button">
+            <a href="home1.html" class="btn btn-secondary">← Home</a>
+        </div>
+         <!-- Filters Section -->
+        <section class="filters-section">
+            <div class="filters-container">
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search reports..."
+                        class="search-input"
+                    >
+                    <button onclick="searchReports()" class="btn btn-primary">Search</button>
+                </div>
+
+                <!-- Filter Options -->
+                <div class="filter-options">
+                    <!-- Report Type Filter -->
+                    <div class="filter-group">
+                        <label for="typeFilter">Report Type:</label>
+                        <select id="typeFilter" onchange="filterReports()" class="filter-select">
+                            <option value="">All Types</option>
+                            <option value="physical">Physical</option>
+                            <option value="mental">Mental</option>
+                            <option value="nutrition">Nutrition</option>
+                            <option value="sleep">Sleep</option>
+                        </select>
+                    </div>
+
+                    <!-- Date Range Filter -->
+                    <div class="filter-group">
+                        <label for="dateFilter">Date Range:</label>
+                        <select id="dateFilter" onchange="filterReports()" class="filter-select">
+                            <option value="">All Time</option>
+                            <option value="today">Today</option>
+                            <option value="week">This Week</option>
+                            <option value="month">This Month</option>
+                            <option value="year">This Year</option>
+                        </select>
+                    </div>
+
+                    <!-- Status Filter -->
+                    <div class="filter-group">
+                        <label for="statusFilter">Status:</label>
+                        <select id="statusFilter" onchange="filterReports()" class="filter-select">
+                            <option value="">All Status</option>
+                            <option value="completed">Completed</option>
+                            <option value="pending">Pending</option>
+                            <option value="excellent">Excellent</option>
+                        </select>
+                    </div>
+
+                    <!-- Clear Filters Button -->
+                    <button onclick="clearFilters()" class="btn btn-secondary">Clear Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports Grid Section -->
+        <section class="reports-section">
+            <!-- Reports Container -->
+            <div class="reports-grid" id="reportsGrid">
+                <!-- Reports will be loaded here dynamically by JavaScript -->
+                <div class="loading">Loading reports...</div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No reports found matching your filters. Try adjusting your search criteria.</p>
+            </div>
+        </section>
+
+        <!-- Pagination Section -->
+        <section class="pagination-section">
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be added here by JavaScript -->
+            </div>
+        </section>
+    </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Footer Column 1 -->
+                <div class="footer-section">
+                    <h5>FitZone</h5>
+                    <p>Your complete fitness and wellness platform created by Sagar,sankalpa,pawan & Muksam</p>
+                </div>
+    
+                <!-- Footer Column 2 -->
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="about.html">About Us </a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Footer Column 3 -->
+                <div class="footer-section">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Footer Column 4 -->
+                <div class="footer-section">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li>Email: sagarchiluwal07@gmail.com</li>
+                        <li>Phone: +44 7354107558</li>
+                    </ul>
+                </div>
+            </div>
+        
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitZone . All rights reserved.</p>    
+                   <p>Designed with love  for your wellness</p>
+        </div>
+    </footer>
+
+    <script src="Report.js"></script>
+</body>
+</html>
